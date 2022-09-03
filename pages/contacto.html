@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VICO</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Edu+VIC+WA+NT+Beginner&display=swap" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="grilla">
+    <header>
+      <nav>
+        <a href="../index.html" ><img class="logotipo" src="../assets/img/logo.png" alt="logo" /></a>
+
+        <ul class="barra-nav">
+          <li class="barra-nav-item">
+            <a class="nav-link" href="../index.html">Inicio</a>
+          </li>
+          <li class="barra-nav-item">
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="barra-nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+          <li class="barra-nav-item">
+            <a class="nav-link" href="sobremi.html">Sobre Mi</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="fondo-contacto">
+      <h2 class="titulo-principal">¡Dejame tu consulta aqui abajo!</h2>
+
+      <section class="contacto">
+        <form class="contacto__form" action="send.php" method="get" enctype="multipart/form-data" >
+          <input class="contacto__form-item" type="text" placeholder=" Nombre" />
+          <input class="contacto__form-item" type="text" placeholder=" Apellido" />
+          <input class="contacto__form-item" type="email" placeholder=" E-mail" />
+          <input class="contacto__form-item" type="text"  placeholder=" Asunto" />
+
+          <textarea cols="38" rows="10" placeholder="Escriba aqui su consulta." ></textarea>
+
+          <button type="reset">Limpiar formulario</button>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <h5>Copyright, todos los derechos reservados.</h5>
+
+      <h5>Seguime en mis redes:</h5>
+
+      <a
+        href="https://instagram.com/vicodiseno?igshid=YmMyMTA2M2Y="
+        target="_blank"
+        ><img
+          class="foto-pie"
+          src="../assets/img/instagram.jpg"
+          alt="instagram"
+      /></a>
+
+      <a href="https://www.facebook.com/VicoDiseno" target="_blank"
+        ><img class="foto-pie" src="../assets/img/facebook.png" alt="facebook"
+      /></a>
+    </footer>
+  </div>
+  </body>
+</html>
