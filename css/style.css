@@ -2,10 +2,8 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    
 }
 
-/*
 @font-face {
     font-family: 'lobster';
     src: url('../assets/font/Lobster/Lobster-Regular.ttf');
@@ -25,8 +23,8 @@
     "footer footer";
     grid-template-rows: repeat(3, auto);
     grid-template-columns:repeat(2, auto);
-
 }
+
 header {
     grid-area: header;
 }
@@ -71,7 +69,6 @@ nav {
     border-radius: 7px;
 }
 
-
 main {
     grid-area: main;
     margin: 30px;
@@ -94,10 +91,11 @@ main {
     font-size: 70px;
     text-align: center;   
 }
+
 .texto-principal {
     text-align: center;
     font-family: 'lobster';
-    font-size: 30px;
+    font-size: 40px;
     padding-bottom: 1em;
     color: rgb(240, 238, 238);
 }
@@ -109,12 +107,11 @@ main {
     grid-column-gap:40px;
     grid-row-gap: 40px;
     justify-items: center;
-    align-items: center;
-    
+    align-items: center; 
 }
 
-.trabajos__item1{
-    justify-self: end;
+.trabajos__item {
+    justify-self: center;
     background-color: #fff;
     text-align: center;
     width: 450px;
@@ -124,32 +121,16 @@ main {
     transition: all 0.5s ease;
 }
 
-.trabajos__item1:hover {
-    width: 475px;
-    height: 625px;
-}
-
-.trabajos__item2 {
-    justify-self: start;
-    background-color: #fff;
-    text-align: center;
-    width: 450px;
-    height: 600px;
-    border-radius: 35px;
-    box-shadow: 0 0 20px 0 #b99bd4;
-    transition: all 0.5s ease;   
-}
-
-.trabajos__item2:hover {
-    width: 475px;
-    height: 625px;
+.trabajos__item:hover {
+    width: 465px;
+    height: 615px;
 }
 
 .trabajos__item-foto {
     height: 450px;
     width: 350px;
     margin-top: 20px;
-    border-radius: 15px;
+    border-radius: 15px;   
 }
 
 .trabajos h3 {
@@ -192,8 +173,7 @@ main {
 
 .fondo-portfolio {
     margin: 30px;
-    background-color: #f2d721;
-    
+    background-color: #f2d721;  
 }
 
 .titulo-principal-portfolio {
@@ -235,7 +215,6 @@ main {
     font-weight: lighter;
     font-family: "recoleta";
 }
-
 
 .contacto {
     display: flex;
@@ -303,16 +282,13 @@ main {
     font-size: 25px;
     line-height: 25px;
     font-family: "recoleta";
-    color: #ffff;
-    
+    color: #ffff; 
 }
 
 .info__contenido a {
     display: inline-block;
     margin-left: 0;
 }
-
-
 
 footer {
     grid-area: footer;
@@ -343,6 +319,7 @@ h5 {
         width: auto;
         margin: 50px;
     }
+
     .info__titulo {
         padding: 0 0 30px 0;
         text-align: center;
@@ -350,53 +327,67 @@ h5 {
 }
 
 @media (max-width: 900px) {
+    main {
+        margin: 10px;
+    }
+
     nav {
         display: grid;
         grid-template-columns: 1fr;
         justify-items: center;
     }
+
     .logotipo{
         justify-self: center;
         margin: 10px 0 10px 0;
     }
+
     .barra-nav {
         margin-right: 0;
         justify-items: center;
     }
+
     .barra-nav-item {
         padding: 10px 0;
     }
+
     .trabajos {
         grid-template-columns: 1fr;
     }
+
     .trabajos__item1 {
         justify-self: center;
     }
+
     .trabajos__item2 {
         justify-self: center;
     }
+
     .trabajos-porfolios-foto {
         height: 350px;
     }
-
 }
 
 @media (max-width: 600px) {
+    main {
+        margin: 10px;
+    }
+
     .barra-nav {
         flex-direction: column;
         align-items: center;
         margin: 1px;
         padding: 2px;
     }
+
     .barra-nav-item {
         margin: 1px;
         padding: 2px;
     }
+    
     .info__contenido {
         margin: 20px;
         text-align: center;
         padding: 0;
     }
 }
-
-*/
