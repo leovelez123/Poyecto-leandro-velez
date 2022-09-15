@@ -1,0 +1,47 @@
+header {
+    grid-area: header;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: $primary;  
+
+    &__logotipo{
+        margin: 2em 0 2em 5em;
+        height: 120px;
+        width: 120px;
+        border-radius: 50%;
+        border: 6px solid #09D4C2;
+    }
+    
+    &__barra {
+        display: flex;
+        margin-right: 50px;
+        list-style: none;
+
+        &-item {
+            font-size: 20px;
+            margin: 10px 10px;
+            padding-top: 100px;
+            text-transform: uppercase;
+        }
+        
+        &-link{
+            color: #f5f0fa;
+            font-family: "recoleta";
+            text-decoration: none;
+            padding: 8px 12px;
+
+            &:hover {
+                background-color:#08C2B2;
+                transition: 0.7s;
+                border-radius: 7px;
+            }
+        }
+    }
+} 
+
+
+
+

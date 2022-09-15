@@ -1,0 +1,81 @@
+@media (max-width: 1024px) {
+    .info {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+    
+    .info__foto {
+        justify-self: center;
+        height: 600px;
+        width: auto;
+        margin: 50px;
+    }
+
+    .info__titulo {
+        padding: 0 0 30px 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 900px) {
+    main {
+        margin: 10px;
+    }
+
+    .nav {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .nav__logotipo{
+        justify-self: center;
+        margin: 10px 0 10px 0;
+    }
+
+    .nav__barra {
+        margin-right: 0;
+        justify-items: center;
+    }
+
+    .nav__barra-item {
+        padding: 10px 0;
+    }
+
+    .trabajos {
+        grid-template-columns: 1fr;
+    }
+
+    .trabajos__item {
+        justify-self: center;
+    }
+
+    .trabajos-porfolios-foto {
+        height: 350px;
+    }
+}
+
+@media (max-width: 600px) {
+    main {
+        margin: 10px;
+    }
+
+    .nav__barra {
+        flex-direction: column;
+        align-items: center;
+        margin: 1px;
+        padding: 2px;
+    }
+
+    .nav__barra-item {
+        margin: 1px;
+        padding: 2px;
+    }
+    
+    .info__contenido {
+        margin: 20px;
+        text-align: center;
+        padding: 0;
+    }
+}

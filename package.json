@@ -1,0 +1,22 @@
+{
+  "name": "vicodisenio-velez",
+  "version": "1.0.0",
+  "description": "Aplicando scss a mi proyecto",
+  "main": "index.js",
+  "scripts": {
+    "build-sass": "node-sass --include-path scss ./scss/style.scss ./css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leovelez123/Poyecto-leandro-velez.git"
+  },
+  "author": "Leandro Velez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leovelez123/Poyecto-leandro-velez/issues"
+  },
+  "homepage": "https://github.com/leovelez123/Poyecto-leandro-velez#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.3"
+  }
+}
