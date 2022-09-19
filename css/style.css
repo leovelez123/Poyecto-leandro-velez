@@ -14,9 +14,7 @@
 
 .grilla {
   display: grid;
-  grid-template-areas: "header header"
- "main main"
- "footer footer";
+  grid-template-areas: "header header" "main main" "footer footer";
   grid-template-rows: repeat(3, auto);
   grid-template-columns: repeat(2, auto); }
 
@@ -52,32 +50,40 @@ header {
         transition: 0.7s;
         border-radius: 7px; }
 
-main {
+footer {
+  display: inline-block;
+  background-color: white;
+  text-align: center; }
+  footer h5 {
+    font-size: 15px; }
+  footer a img {
+    margin: 10px;
+    height: 30px;
+    border-radius: 20%; }
+
+.inicio {
   grid-area: main;
   margin: 30px;
   background-color: #dec9f0; }
-
-.titulo-principal {
-  padding-top: 1em;
-  text-align: center;
-  color: #ffff;
-  font-size: 100px;
-  font-weight: lighter;
-  font-family: "recoleta"; }
-
-.titulo-secundario {
-  padding: 0.5em 0 1em 0;
-  color: #ffff;
-  font-family: 'Dancing Script', cursive;
-  font-size: 70px;
-  text-align: center; }
-
-.texto-principal {
-  text-align: center;
-  font-family: 'lobster';
-  font-size: 40px;
-  padding-bottom: 1em;
-  color: #f0eeee; }
+  .inicio h1 {
+    padding-top: 1em;
+    text-align: center;
+    color: #ffff;
+    font-size: 100px;
+    font-weight: lighter;
+    font-family: "recoleta"; }
+  .inicio h2 {
+    padding: 0.5em 0 1em 0;
+    color: #ffff;
+    font-family: 'Dancing Script', cursive;
+    font-size: 70px;
+    text-align: center; }
+  .inicio p {
+    text-align: center;
+    font-family: 'lobster';
+    font-size: 40px;
+    padding-bottom: 1em;
+    color: #f0eeee; }
 
 .trabajos {
   display: grid;
@@ -96,14 +102,14 @@ main {
     border-radius: 35px;
     box-shadow: 0 0 20px 0 #b99bd4;
     transition: all 0.5s ease; }
-    .trabajos__item:hover {
-      width: 465px;
-      height: 615px; }
-    .trabajos__item-fotos {
+    .trabajos__item-foto {
       height: 450px;
       width: 350px;
       margin-top: 20px;
       border-radius: 15px; }
+    .trabajos__item:hover {
+      width: 465px;
+      height: 615px; }
   .trabajos h3 {
     margin: 0px 50px;
     font-family: "recoleta";
@@ -120,21 +126,19 @@ main {
     font-family: system-ui, system-ui, sans-serif;
     color: #6e6e6e; }
 
-.parte-secundaria {
+.inicio2 {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto;
   justify-content: center; }
-
-.subtitulo-principal {
-  padding: 1em 0 1em 0;
-  font-family: 'lobster';
-  font-size: 50px;
-  text-align: center;
-  color: #ffff; }
-
-.video-principal {
-  margin-bottom: 50px; }
+  .inicio2__titulo {
+    padding: 1em 0 1em 0;
+    font-family: 'lobster';
+    font-size: 50px;
+    text-align: center;
+    color: #ffff; }
+  .inicio2__video {
+    margin-bottom: 50px; }
 
 @media (max-width: 1024px) {
   .info {
