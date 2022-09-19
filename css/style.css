@@ -14,7 +14,9 @@
 
 .grilla {
   display: grid;
-  grid-template-areas: "header header" "main main" "footer footer";
+  grid-template-areas: "header header"
+ "main main"
+ "footer footer";
   grid-template-rows: repeat(3, auto);
   grid-template-columns: repeat(2, auto); }
 
@@ -51,11 +53,11 @@ header {
         border-radius: 7px; }
 
 footer {
-  display: inline-block;
-  background-color: white;
+  grid-area: footer;
   text-align: center; }
   footer h5 {
-    font-size: 15px; }
+    font-size: 15px;
+    color: #6e6e6e; }
   footer a img {
     margin: 10px;
     height: 30px;

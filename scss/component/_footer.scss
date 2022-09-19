@@ -1,15 +1,17 @@
 footer {
-    display: inline-block;
-    background-color: white;
+    grid-area: footer;
     text-align: center;
 
     h5 {
         font-size: 15px;
+        color: #6e6e6e;
     }
 
-    a img {
-        margin: 10px;
-        height: 30px;
-        border-radius: 20%;
-    }
+    a {
+        img {
+            margin: 10px;
+            height: 30px;
+            border-radius: 20%;
+        }
+    } 
 }
