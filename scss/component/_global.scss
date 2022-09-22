@@ -24,3 +24,15 @@
     grid-template-rows: repeat(3, auto);
     grid-template-columns:repeat(2, auto);
 }
+
+@mixin etiquetas ($cantidad) {
+    
+    display: grid;
+    grid-template-columns: repeat($cantidad, 1fr);
+    grid-template-rows: repeat($cantidad, 1fr);
+    grid-column-gap:40px;
+    grid-row-gap: 40px;
+    justify-items: center;
+    align-items: center;
+    
+}
