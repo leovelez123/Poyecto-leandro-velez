@@ -1,0 +1,54 @@
+.contacto {
+    grid-area: main;
+    margin: 30px;
+    background-color: #a2d4c2;
+
+    &-titulo-principal{
+        padding-top: 1em;
+        padding-bottom: 50px;
+        text-align: center;
+        color: #ffff;
+        font-size: 60px;
+        font-weight: lighter;
+        font-family: "recoleta";
+    }
+
+    &__formulario {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 100px;
+
+        &-form {
+            padding: 50px;
+            height: 550px;
+            width: 400px;
+            background-color:#a5cbbd ;
+            border-radius: 14px;
+            box-shadow: 0 0 12px #768680;
+
+            &-item {
+                width: 300px;
+                height: 40px;
+                max-width: 400px;
+                margin: 10px auto; 
+                border-radius: 7px;
+                padding: 10px;
+            }
+            
+            textarea {
+                margin: 10px 0;
+            }
+
+            button {
+                max-width: 400px;
+                margin: 10px 0 0 40px;
+                padding: 5px;
+                height: 30px;
+                color: #ffff;
+                background-color: #08C2B2;
+                font-size: 15px;
+                border-radius: 5px;
+            }
+        }
+    }
+}

@@ -53,7 +53,7 @@ header {
 footer {
   grid-area: footer;
   text-align: center; }
-  footer h5 {
+  footer h4 {
     font-size: 15px;
     color: #6e6e6e; }
   footer a img {
@@ -134,17 +134,115 @@ footer {
   .inicio2__video {
     margin-bottom: 50px; }
 
+.grilla {
+  display: grid; }
+
+.portfolio {
+  grid-area: main;
+  margin: 30px;
+  background-color: #f2d721; }
+  .portfolio-titulo-pricipal {
+    padding-top: 1em;
+    padding-bottom: 50px;
+    text-align: center;
+    color: #ffff;
+    font-size: 60px;
+    font-weight: lighter;
+    font-family: "recoleta"; }
+  .portfolio__trabajos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-row-gap: 20px;
+    justify-items: center; }
+    .portfolio__trabajos-item {
+      margin-bottom: 20px; }
+    .portfolio__trabajos-foto {
+      height: 450px; }
+
+.contacto {
+  grid-area: main;
+  margin: 30px;
+  background-color: #a2d4c2; }
+  .contacto-titulo-principal {
+    padding-top: 1em;
+    padding-bottom: 50px;
+    text-align: center;
+    color: #ffff;
+    font-size: 60px;
+    font-weight: lighter;
+    font-family: "recoleta"; }
+  .contacto__formulario {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px; }
+    .contacto__formulario-form {
+      padding: 50px;
+      height: 550px;
+      width: 400px;
+      background-color: #a5cbbd;
+      border-radius: 14px;
+      box-shadow: 0 0 12px #768680; }
+      .contacto__formulario-form-item {
+        width: 300px;
+        height: 40px;
+        max-width: 400px;
+        margin: 10px auto;
+        border-radius: 7px;
+        padding: 10px; }
+      .contacto__formulario-form textarea {
+        margin: 10px 0; }
+      .contacto__formulario-form button {
+        max-width: 400px;
+        margin: 10px 0 0 40px;
+        padding: 5px;
+        height: 30px;
+        color: #ffff;
+        background-color: #08C2B2;
+        font-size: 15px;
+        border-radius: 5px; }
+
+.sobremi {
+  grid-area: main;
+  margin: 30px;
+  background-color: #f38c38; }
+  .sobremi__info {
+    display: inline-block; }
+    .sobremi__info-foto {
+      padding-bottom: 8px;
+      margin: 150px 50px 30px 100px;
+      float: left; }
+    .sobremi__info-titulo {
+      padding: 150px 0 20px 30px;
+      text-align: left;
+      color: #ffff;
+      font-size: 50px;
+      font-weight: lighter;
+      font-family: "recoleta"; }
+    .sobremi__info-contenido {
+      display: block;
+      margin: 0 100px 0 100px;
+      padding: 0 40px 40px 0;
+      text-align: left;
+      font-size: 25px;
+      line-height: 25px;
+      font-family: "recoleta";
+      color: #ffff; }
+      .sobremi__info-contenido a {
+        display: inline-block;
+        margin-left: 0; }
+
 @media (max-width: 1024px) {
-  .info {
+  .sobremi__info {
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center; }
-  .info__foto {
+  .sobremi__info-foto {
     justify-self: center;
     height: 600px;
     width: auto;
     margin: 50px; }
-  .info__titulo {
+  .sobremi__info-titulo {
     padding: 0 0 30px 0;
     text-align: center; } }
 
@@ -167,7 +265,7 @@ footer {
     grid-template-columns: 1fr; }
   .trabajos__item {
     justify-self: center; }
-  .trabajos-porfolios-foto {
+  .portfolio__trabajos-foto {
     height: 350px; } }
 
 @media (max-width: 600px) {
